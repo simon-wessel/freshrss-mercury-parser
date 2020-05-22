@@ -1,0 +1,8 @@
+{
+  "name": "MercuryParser",
+  "author": "Simon Wessel",
+  "description": "Uses the Mercury Parser to retrieve full article contents.",
+  "version": 0.1,
+  "entrypoint": "MercuryParser",
+  "type": "user"
+}
