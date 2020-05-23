@@ -1,0 +1,16 @@
+<form action="<?php echo _url('extension', 'configure', 'e', urlencode($this->getName())); ?>" method="post">
+    <input type="hidden" name="_csrf" value="<?php echo FreshRSS_Auth::csrfToken(); ?>" />
+    <div class="form-group">
+        <label class="group-name" for="mercury-api-url">Mercury Parser API URL</label>
+        <div class="group-controls">
+            <input type="text" name="mercury-api-url" id="mercury-api-url" value="<?php echo FreshRSS_Context::$user_conf->mercury_api_url; ?>" />
+        </div>
+    </div>
+
+    <div class="form-group form-actions">
+        <div class="group-controls">
+            <button type="submit" class="btn btn-important"><?php echo _t('gen.action.submit'); ?></button>
+            <button type="reset" class="btn"><?php echo _t('gen.action.cancel'); ?></button>
+        </div>
+    </div>
+</form>
